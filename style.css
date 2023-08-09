@@ -5,3 +5,40 @@
     text-align: center;
    padding-top: 30px;
 }
+
+.Gallery img{
+    width: 80%;
+        padding: 10%;
+}
+
+.card{
+
+    width: 400px;
+    height: 400px;
+    }
+  
+  .innercard{
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    }   
+   
+ .card:hover .innercard{
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+ 
+  .back{
+    transform: rotateY(180deg);
+   }
+.ncc{
+    margin-bottom: 40%;
+}
+.contact{
+    margin-left: 40%;
+}
