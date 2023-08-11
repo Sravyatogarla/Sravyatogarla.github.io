@@ -90,3 +90,16 @@
        font-size: 3em;
     }
  }
+ i {font-size: 4em;
+   color:#78C1F3;}
+    
+.cardsize{
+   width:300px;
+     border: none;
+    text-align:center;}
+.skill{
+   padding-top: 5%;
+   padding-left: 5%;
+   padding-right: 5%;
+
+}
