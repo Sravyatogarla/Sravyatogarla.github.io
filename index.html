@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/d758e69777.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
        <!-- navbar start -->
@@ -17,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="#home" >Home</a>
                   </li>
@@ -40,14 +48,17 @@
           <!-- navbar ends -->
           <!-- home page starts -->
     <div class="home " id="home">
-     
-      <div class="container demo">
+     <div class="container demo">
         <div class="content">
            <div id="large-header" class="large-header">
-              <canvas id="demo-canvas"></canvas>
-              <h1 class="main-title"><span class="thin">Togarla</span> Sravya</h1>
-
-           </div>
+            <canvas id="demo-canvas"></canvas>
+            <div class="main-title">
+              <p> Hello! this is </p>
+               <h1> Sravya togarla</h1> <br>
+               <h2 class="text-3"> I'm a <span class="typing-2"></span></h2>
+            
+              <button  class="btn btn-primary" > More About Me</button></div>
+              </div>
         </div>
      </div>
     </div>
@@ -59,16 +70,21 @@
  
       <div class="row">
            
-                 <div class="col-md-5">
+                 <div class="col-md-6">
                    <img src="https://media.licdn.com/dms/image/D5603AQG_QSAtGYLM3Q/profile-displayphoto-shrink_800_800/0/1679568221790?e=1697068800&v=beta&t=j0eovuZ3lIcAwM5tV_6KXfwycQvPJmpGRaNXc4MsD7k" style="height: 400px;">
                  </div>
             
-           <div class="col-md-7"> <p>
-                 Hello! 
-                 I am <b>Sravya Togarla,</b> a recent graduate of <br>Girraj Government College in Nizamabad,<br> where I completed my BSc in Biotechnology. Throughout my academic journey, I have developed a strong foundation in biological sciences and a keen interest in exploring the potential of biotechnology to solve real-world challenges. </p>
-                 
-                 <p> As a self-learner, I have taken the initiative to develop my technical skills in web development, including HTML, CSS, and JavaScript. I firmly believe in the intersection of science and technology, and leveraging my web development skills allows me to enhance the communication of scientific ideas and discoveries.</p>
-                 </div>
+           <div class="col-md-6">
+            <div><i style="color: black; font-size: 20px;">You striked on my About Me page so let me tell you my story</i></div>
+            <h2 class="text-2">I'm Sravya Togarla and I'm a <span class="typing-3" style="color: #78C1F3;"></span></h2>
+            <br>
+            A recent graduate of <b>Girraj Government College in Nizamabad,</b> where I completed my BSc in Biotechnology. Throughout my academic journey, I have developed a strong foundation in biological sciences and a keen interest in exploring the potential of biotechnology to solve real-world challenges. </p>
+  
+            As a self-learner, I have taken the initiative to develop my technical skills in web development, including HTML, CSS, and JavaScript. I firmly believe in the intersection of science and technology, and leveraging my web development skills allows me to enhance the communication of scientific ideas and discoveries.As a self-learner, I have taken the initiative to develop my technical skills in web development, including HTML, CSS, and JavaScript. I firmly believe in the intersection of science and technology, and leveraging my web development skills allows me to enhance the communication of scientific ideas and discoveries.<br><br>
+    <strong>Always on lookout for efficient projects to work on</strong></p>
+            <button class="btn btn-primary" style="background-color: #78C1F3; border-color: black; color: black;">Download Resume</button>
+
+                      </div>
                  
      </div>
 
@@ -78,394 +94,559 @@
    </div>
 
 
+   <div class="mytabs">
+    <input type="radio" class="tab-item" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree"> Skills</label>
+    <div class="tab">
+      <div class="row">
+        <!-- skills start -->
+        <div class="skills" style="border: none;">
+          
+            <div class="row 1 skill">
+              
+              <div class="col-md-4">
+                  
+                <div class="card cardsize" style="width:400px; border:none">
+             
+             <i class="fa-brands fa-internet-explorer " ></i>
+          
+            <div class="card-body">
+             <h4 class="card-title" style="text-align:center;font-weight:800;">Web development</h4>
+            <p class="card-text"> Web developer skills are often applied to the non-design aspects of building websites – writing markup and coding.</p>
+             
+           </div>
+           </div>
+                   
+           </div>
+             
+           <div class="col-md-4">
+                  
+             <div class="card cardsize" style="width:400px; border:none">
+               <i class="fa-solid fa-wand-magic-sparkles " ></i>
+           
+          
+           <div class="card-body">
+             <h4 class="card-title" style="text-align:center;font-weight:800;"> Creativity</h4>
+           <p class="card-text"> Creativity always starts with imagination to generate new ideas.I believe in thinking outside the box and finding innovative solutions to complex problems, which has proven valuable in both my academic and technical pursuits</p>
+             
+          </div>
+          </div>        
+          </div>
+              
+          <div class="col-md-4">
+          
+          <div class="card cardsize" style="width:400px; border: none;" >
+          
+           <i class="fa-solid fa-camera-retro " ></i>
+          
+           <div class="card-body">
+             <h4 class="card-title" style="text-align:center;font-weight:800; "> Photography</h4>
+             <p class="card-text">Is an art of observation. It's about finding something interesting in an ordinary place. It has little to do with the things you see and everything to do with how we see them. </p>
+             
+          </div>
+          </div>               
+          </div>
+              
+          </div>
+          
+          <div class="row 2 skill">
+             
+          <div class="col-md-4">
+                  
+                <div class="card cardsize" style="width:400px; border:none">
+                  
+             <i class="fa-solid fa-hand-holding-heart " ></i>
+          
+            <div class="card-body">
+             <h4 class="card-title" style="text-align:center;font-weight:800;"> Leadership </h4>
+            <p class="card-text"> As a team leader of my NSS unit and part of other organisations in my academics. That had helped me become a better person.I will continue to push myself and others forward and show my leadership as I have so far. </p>
+             
+           </div>
+           </div>
+           </div>
+           
+           <div class="col-md-4">
+                  
+             <div class="card cardsize" style="width:400px; border:none">
+               
+           <i class="fa-solid fa-users" ></i>
+          <div class="card-body">
+           <h4 class="card-title" style="text-align:center;font-weight:800;"> Team work </h4>
+            <p class="card-text">Working effectively in a team is essential in today's interconnected world. I enjoy collaborating with diverse groups of people, pooling our strengths, and achieving collective success. </p>
+             
+           </div>
+           </div>
+           </div>
+           
+           <div class="col-md-4">
+                  
+             <div class="card cardsize" style="width:400px; border:none">
+           <i class="fa-solid fa-list-check" ></i>
+           
+          <div class="card-body">
+           <h4 class="card-title"style="text-align:center;font-weight:800;">
+           Multitasking </h4>
+           
+          <p class="card-text">Balancing multiple projects and responsibilities is a skill I have refined throughout my academic and technical journey. I pride myself on being organized and efficient. </p>
+             
+           </div>
+           </div>
+                   
+           </div>
+           
+           
+           
+          </div>
+          </div>
+      </div>
+    </div>
+    <!-- skill ends  -->
 
+    <!-- experience starts  -->
+
+    <input type="radio" class="tab-item" id="tabsilver" name="mytabs">
+    <label for="tabsilver">Experience</label>
+    <div class="tab">
+        <div class="ncc nss">
+            <div class="row">
+              <div class="col-md-6">
+                 <div class="flip-card" >
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_National_Cadet_Corps_%28India%29.png" alt="Avatar">
+                      <h4> NCC </h4>
+                    </div>
+                    <div class="flip-card-back" >
+                    <em>   <h3>(2015 -2017) </h3><br></em>
+                    <strong class="h4">POSITION :</strong>
+                                    <em>CADET <br></em>
+                      <em>
+              
+                   
+                                  ○ Received comprehensive training in leadership discipline and team work 
+                                  <br>
+                                  ○ Engaged in various veterans support activities such as:
+                                  <ul>
+                                   <li> Organizing Commemorative events </li>       <li> Participating in flag hosting ceremonies </li> 
+                               <li> Assisting in fund raising initiatives for veterans welfare </li>
+                                       
+                                  </ul> 
+                                  <br>
+              
+                                  </em>
+                    </div>
+                    </div>
+                   
+                    </div>
+                   
+              </div>
+              <div class="col-md-6">
+                 <div class="flip-card" >
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <img src="https://nss.gov.in/sites/default/files/nsshomepage.jpeg" alt="Avatar">
+                      <h4> NSS </h4>
+                    </div>
+                    <div class="flip-card-back" >
+                    <em>   <h3>(2021-2023) </h3><br></em>
+                    <strong class="h4">POSITION :</strong>
+                                    <em>TEAM LEADER <br></em>
+                      <em>
+              
+                   
+                                  ○ • Lead team leader for various social service schemes like:
+                                
+                                  <ul>
+                                   <li> Swachh bharat abhiyan </li>
+                                   <li> Surveys in nearby villages </li>
+                                   <li> 75th Independence day freedom movement</li>
+                                   <li> Blood and Organ donation drive programmes </li>
+                                  </ul> 
+                                  <br>
+              
+                                  </em>
+                    </div>
+                    </div>
+                   
+                    </div>
+                   
+              </div>
+           </div>
+         
+        
+           </div>
+
+
+
+    </div>
+    <!-- experience ends -->
+    <!-- education starts -->
+    <input type="radio" class="tab-item" id="tabgold" name="mytabs">
+    <label for="tabgold">Education</label>
+    <div class="tab">
+        <div>
+            <h1> EDUCATION </h1>
+         
+         <div class="row">
+         <div class="col-md-6">
+         <h4> <b> • Girraj government college(A) </b></h4>
+         </div>
+         <div class="col-md-6">
+         <p style="text-align:right;"> Nizamabad <br>(2020 - 2023)</p>
+         </div>
+         </div>
+         
+         <p> Bsc.Biotechology ZC </p>
+         <p> CGPA Sem5 : 8.8</p>
+         
+         <div class="row">
+         <div class="col-md-6">
+         <h4> <b> • Sri Chaitanya college of education </b> </h4>
+         </div>
+         <div class="col-md-6">
+         <p style="text-align:right;"> Hyderabad  <br>(2018 - 2020)</p>
+         </div>
+         <p> Intermediate (BI.P.C)</p>
+         <p> CGPA : 9.15 </p>
+         </div>
+         
+         <div class="row">
+         <div class="col-md-6">
+         <h4> <b> • Nirmala hrudaya convent </b> </h4>
+         </div>
+         <div class="col-md-6">
+         <p style="text-align:right;"> Nizamabad  <br>(2017-2018)</p>
+         </div>
+         <p>SSC </p>
+         <p> CGPA : 9.3 </p>
+         </div>
+           </div>
+        
+    </div>
+  </div>
+</section>
    <!-- about page ends -->
    <!-- skills start -->
-<div class="skills" style="border: none;">
-  <h1 style="text-align:center;">  Skills</h1>
-  <div class="row 1 skill">
-    
-    <div class="col-md-4">
-        
-      <div class="card cardsize" style="width:400px; border:none">
-   
-   <i class="fa-brands fa-internet-explorer " ></i>
-
-  <div class="card-body">
-   <h4 class="card-title" style="text-align:center;font-weight:800;">Web development</h4>
-  <p class="card-text"> Web developer skills are often applied to the non-design aspects of building websites – writing markup and coding.</p>
-   
- </div>
- </div>
-         
- </div>
-   
- <div class="col-md-4">
-        
-   <div class="card cardsize" style="width:400px; border:none">
-     <i class="fa-solid fa-wand-magic-sparkles " ></i>
- 
-
- <div class="card-body">
-   <h4 class="card-title" style="text-align:center;font-weight:800;"> Creativity</h4>
- <p class="card-text"> Creativity always starts with imagination to generate new ideas.I believe in thinking outside the box and finding innovative solutions to complex problems, which has proven valuable in both my academic and technical pursuits</p>
-   
-</div>
-</div>        
-</div>
-    
-<div class="col-md-4">
-
-<div class="card cardsize" style="width:400px; border: none;" >
-
- <i class="fa-solid fa-camera-retro " ></i>
-
- <div class="card-body">
-   <h4 class="card-title" style="text-align:center;font-weight:800; "> Photography</h4>
-   <p class="card-text">Is an art of observation. It's about finding something interesting in an ordinary place. It has little to do with the things you see and everything to do with how we see them. </p>
-   
-</div>
-</div>               
-</div>
-    
-</div>
-
-<div class="row 2 skill">
-   
-<div class="col-md-4">
-        
-      <div class="card cardsize" style="width:400px; border:none">
-        
-   <i class="fa-solid fa-hand-holding-heart " ></i>
-
-  <div class="card-body">
-   <h4 class="card-title" style="text-align:center;font-weight:800;"> Leadership </h4>
-  <p class="card-text"> As a team leader of my NSS unit and part of other organisations in my academics. That had helped me become a better person.I will continue to push myself and others forward and show my leadership as I have so far. </p>
-   
- </div>
- </div>
- </div>
- 
- <div class="col-md-4">
-        
-   <div class="card cardsize" style="width:400px; border:none">
-     
- <i class="fa-solid fa-users" ></i>
-<div class="card-body">
- <h4 class="card-title" style="text-align:center;font-weight:800;"> Team work </h4>
-  <p class="card-text">Working effectively in a team is essential in today's interconnected world. I enjoy collaborating with diverse groups of people, pooling our strengths, and achieving collective success. </p>
-   
- </div>
- </div>
- </div>
- 
- <div class="col-md-4">
-        
-   <div class="card cardsize" style="width:400px; border:none">
- <i class="fa-solid fa-list-check" ></i>
- 
-<div class="card-body">
- <h4 class="card-title"style="text-align:center;font-weight:800;">
- Multitasking </h4>
- 
-<p class="card-text">Balancing multiple projects and responsibilities is a skill I have refined throughout my academic and technical journey. I pride myself on being organized and efficient. </p>
-   
- </div>
- </div>
-         
- </div>
- 
- 
- 
-</div>
-</div>
-
-<!-- skills ends -->
 
 
-   <!-- nccnss -->
-   <div class="ncc nss">
-    
-    <h1> NCC NSS </h1>
-<div class="row">
-  <div class="col-md-6">
+   <div id="portfolio" style="background-color: black;">
+
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="row">
+                <div class="col-md-4">
+        <div class="projects">
+          <img src="projectimages/project image1.jpg">
+          <div class="layer">
+            <h3>Personal portfolio</h3>
+            <p> </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+         </div>
+         </div>
+                <div class="col-md-4">
+                <div class="projects">
+            <img src="projectimages/project image2.jpeg">
+            <div class="layer">
+                <h3> Netflix homepage</h3>
+                <p></p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            </div>
+                <div class="col-md-4">
+                <div class="projects">
+                <img src="projectimages/project image3.jpeg">
+                <div class="layer">
+                    <h3>Temperature converter</h3>
+                    <p></p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+            </div>
+            </div> </div>
+
+           
+          
+           
+            </div>
+            <a href="#" class="btn"> See more</a>
+            </div>
+        </div>
   
-  <div class="card">
-   <div class="innercard">
-     <div class="front">
-       <img  src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_National_Cadet_Corps_%28India%29.png" style="height: 400px; width: 400px;">
-     </div>
-     
-     <div class="back">
-     
-     <div class="row">
-           <div class="col-md-6">
-           <div class="theback">
-         <h1 class=" card-title">NCC</h1>
-         </div>
-          <div class="col-md-6">
-         <h3 style="text-align:right;" > 2015 -2017</h3>
-         </div>
-         </div>
-       <p class="card-text" style="text-align:center;">
-      <p> POSITION: <b>CADET</b>
-    </p>
-     <p>• Received comprehensive training in leadership discipline and team work </p>
-     <br>
-     <p>• Engaged in various veterans support activities such as:
-     <ul>
-     <li> Organizing Commemorative events </li>       <li> Participating in flag hosting ceremonies </li> 
- <li> Assisting in fund raising initiatives for veterans welfare </li>
-         
-    </ul> 
-    </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="col-md-6">
-
-<div class="card">
-   <div class="innercard">
-     <div class="front">
-       <img src="https://nss.gov.in/sites/default/files/nsshomepage.jpeg" style="height: 400px; width: 400px;">
-     </div>
-     
-     <div class="back">
-     
-     <div class="row">
-     <div class="col-md-6">
-     <h1 class=" card-title">NSS</h1>
-     </div>
-     <div class="col-md-6">
- <h3 style="text-align:right;"> 2021-2023 </h3>
-    </div>
-    </div>
-    <p class="card-text"style="text-align: center;" >
-    <p> POSITION: <b> TEAM LEADER</b></p>
-    <P>• Lead team leader for various social service schemes like:
-   <ul>
-    <li> Swachh bharat abhiyan </li>
-    <li> Surveys in nearby villages </li>
-    <li> 75th Independence day freedom movement</li>
-    <li> Blood and Organ donation drive programmes </li>
-   </ul> </p>
-   <p> • Developed leadership skills and Communication skills through participating in various camp programmes </p>
-</div>
-</div>
-</div>
-</div>
-</div>
-   </div>
-   <div>
-    <h1> EDUCATION </h1>
- 
- <div class="row">
- <div class="col-md-6">
- <h4> <b> • Girraj government college(A) </b></h4>
- </div>
- <div class="col-md-6">
- <p style="text-align:right;"> Nizamabad <br>(2020 - 2023)</p>
- </div>
- </div>
- 
- <p> Bsc.Biotechology ZC </p>
- <p> CGPA Sem5 : 8.8</p>
- 
- <div class="row">
- <div class="col-md-6">
- <h4> <b> • Sri Chaitanya college of education </b> </h4>
- </div>
- <div class="col-md-6">
- <p style="text-align:right;"> Hyderabad  <br>(2018 - 2020)</p>
- </div>
- <p> Intermediate (BI.P.C)</p>
- <p> CGPA : 9.15 </p>
- </div>
- 
- <div class="row">
- <div class="col-md-6">
- <h4> <b> • Nirmala hrudaya convent </b> </h4>
- </div>
- <div class="col-md-6">
- <p style="text-align:right;"> Nizamabad  <br>(2017-2018)</p>
- </div>
- <p>SSC </p>
- <p> CGPA : 9.3 </p>
- </div>
-   </div>
-<!-- gallery starts -->
-<div class="Gallery" id="Gallery">
-  <h1> Gallery </h1>
-    
-  <div class="row 1">
-<div class="col-md-3">
-   <img src="gallery/1.jpg">
-   </div>
    
-<div class="col-md-3">
-
-    <img src="gallery/2.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   
-   <img src= "gallery/3.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   <img src="gallery/4.jpg">
-   
-   </div>
-   </div>
-
-    <div class="row 2">
-   <div class="col-md-3">
-   <img src="gallery/5.jpg">
-   </div>
-   
-<div class="col-md-3">
-
-   <img src="gallery/6.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   
-   <img src="gallery/7.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   <img src="gallery/8.jpg">
-   
-   </div>
-   </div>
-    
-   <div class="row 3">
-   <div class="col-md-3">
-   <img src="gallery/9.jpg">
-   </div>
-   
-<div class="col-md-3">
-
-   <img src="gallery/10.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   
-   <img src="gallery/11.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   <img src="gallery/12.jpg">
-   
-   </div>
-    </div>
-    
-    <div class="row 4">
-   <div class="col-md-3">
-   <img src="gallery/13.jpg">
-   </div>
-   
-<div class="col-md-3">
-<img src="gallery/14.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   
-   <img src="gallery/15.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   <img src="gallery/16.jpg">
-   
-   </div>
-    </div>
-
-    <div class="row 5">
-   <div class="col-md-3">
-   <img src="gallery/17.jpg">
-   </div>
-   
-<div class="col-md-3">
-
-   <img src="gallery/18.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   
-   <img src="gallery/19.jpg">
-   </div>
-   
-   <div class="col-md-3">
-   <img src="gallery/20.jpg">
-   
-   </div>
-    </div>
-   
-   
-   
-   
-</div>
 
 
 
-   <!-- form starts -->
-<div class="contact">
-  <h1> CONTACT </h1>
-   <form>
-        
-    <div class="row 1">
-      <div class="col-md-2">
-       <labelfor="name"> Name: </label>
-      </div>
-               
-    <div class="col-md-3">
-<input type="text" placeholder="Enter name" name="">
-    </div>
-    
-    </div>
-               
-    <div class="row 2">
-       <div class="col-md-2">
-       <label for="name"> Email Id: </label>
+   <!-- Internship starts -->
+   <section id="timeline" style="background-color: black;">
+    <div class="timeline_top text-light position-relative">
+       <p class="decorative_word bold text-light text-uppercase d-none d-md-flex timeline_word">
+       </p>
+       <div class="tl_line tl_line_left" aria-hidden="true">
        </div>
-               
-     <div class="col-md-3">                   
-   <input type="text" placeholder="enter email id" Email id="">
-     </div>
-                
+       <div class="tl_line tl_line_mid" aria-hidden="true">
+       </div>
+       <h2 class="h1 yellowspan text-center text-md-left text-uppercase timeline_header blueback">
+          Internship & Certification Timeline
+       </h2>
+       <div class="timeline_nav">
+          <button aria-label="timeline navigation previous" class="transition-fast timeline_nav_prev left">
+          <span class="blueback  material-symbols-outlined material-icons">
+          chevron_left
+          </span>
+          </button>
+          <button aria-label="timeline navigation next" class="transition-fast timeline_nav_next right">
+          <span class="blueback  material-symbols-outlined material-icons">
+          chevron_right
+          </span>
+          </button>
+       </div>
     </div>
+    <div class="timeline_bottom bg-cover" >
+       <div class="green_overlay pb-md-5">
+          <div class="py-5 timeline_content position-relative">
+             <div class="timeline_fadebox d-none d-md-block" aria-hidden="true">
+             </div>
+             <div class="timeline_wrap">
+                <div class="timeline_left_line" aria-hidden="true">
+                </div>
+                <div class="timeline_line" aria-hidden="true">
+                </div>
+                <div id="timeline_slider">
+                   <!--------------------------------------->
+                   <div class="timeline_slide px-4">
+                      <p class="yellow timeline_date text-center m-0 h4">
+                         June 2023
+                      </p>
+                      <div class="timeline_dot flex-center" aria-hidden="true">
+                         <div class="timeline_dot_center">
+                         </div>
+                      </div>
+                      <p class="timeline_item_content text-light mt-3">
+                         Successfully completed "Introduction to HTML" by Sololearn
+                      </p>
+                   </div>
+                   <!--------------------------------------->
+                   <div class="timeline_slide px-4">
+                      <p class="yellow timeline_date text-center m-0 h4">
+                         Aug 2023
+                      </p>
+                      <div class="timeline_dot flex-center" aria-hidden="true">
+                         <div class="timeline_dot_center">
+                         </div>
+                      </div>
+                      <p class="timeline_item_content text-light mt-3">
+                        Successfully completed "Basics of HTML/CSS for Beginners" Online Bootcamp conducted by  Open Weaver Inc
+
+                      </p>
+                   </div>
+                   <!--------------------------------------->
+                   <div class="timeline_slide px-4">
+                      <p class="yellow timeline_date text-center m-0 h4">
+                         Sep 2023
+                      </p>
+                      <div class="timeline_dot flex-center" aria-hidden="true">
+                         <div class="timeline_dot_center">
+                         </div>
+                      </div>
+                      <p class="timeline_item_content text-light mt-3">
+                         Successfully completed Internship in Web development conducted by Digital bhem 
+                      </p>
+                   </div>
+                   <!--------------------------------------->
+                   <div class="timeline_slide px-4">
+                      <p class="yellow timeline_date text-center m-0 h4">
+                        Sep 2023
+                      </p>
+                      <div class="timeline_dot flex-center" aria-hidden="true">
+                         <div class="timeline_dot_center">
+                         </div>
+                      </div>
+                      <p class="timeline_item_content text-light mt-3">
+                        Successfully completed Internship in Web development conducted by Bharat Intern
+                    </p>
+                </div>
                 
- <div class="row 3">
-  <div class="col-md-2">
-    <label for="Number"> phone Number: </label>
-   </div>
-                 
- <div class="col-md-2">
- <input type="numbers" placeholder="enter phone number "phonenumber="">
-   </div>
-   
- </div>
-               
-  <div class="row 4">
-   <div class="col-md-2">
-     <label"Message"> Message:</label>
+                   <!--------------------------------------->
+                   <div class="timeline_slide px-4">
+                      <p class="yellow timeline_date text-center m-0 h4">
+                         sep 2023
+                      </p>
+                      <div class="timeline_dot flex-center" aria-hidden="true">
+                         <div class="timeline_dot_center">
+                         </div>
+                      </div>
+                      <p class="timeline_item_content text-light mt-3">
+                         coming soon
+                      </p>
+                   </div>
+                   <!--------------------------------------->
+                    <!--------------------------------------->
+                    <div class="timeline_slide px-4">
+                        <p class="yellow timeline_date text-center m-0 h4">
+                           sep 2023
+                        </p>
+                        <div class="timeline_dot flex-center" aria-hidden="true">
+                           <div class="timeline_dot_center">
+                           </div>
+                        </div>
+                        <p class="timeline_item_content text-light mt-3">
+                           coming soon
+                        </p>
+                     </div>
+                     <!--------------------------------------->
+                      <!--------------------------------------->
+                   <div class="timeline_slide px-4">
+                    <p class="yellow timeline_date text-center m-0 h4">
+                       sep 2023
+                    </p>
+                    <div class="timeline_dot flex-center" aria-hidden="true">
+                       <div class="timeline_dot_center">
+                       </div>
+                    </div>
+                    <p class="timeline_item_content text-light mt-3">
+                       coming soon
+                    </p>
+                 </div>
+                 <!--------------------------------------->
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+   <!-- Internship ends -->
+<!-- gallery starts -->
+<div class="gallery">
+  <h1>Gallery</h1>
+<div class="main-carousel">
+  <div class="cell"><img src="gallery/1.jpg"></div>
+  <div class="cell"><img src="gallery/2.jpg"></div>
+  <div class="cell"><img src="gallery/3.jpg"></div>
+  <div class="cell"><img src="gallery/4.jpg"></div>
+  <div class="cell"><img src="gallery/5.jpg"></div>
+  <div class="cell"><img src="gallery/6.jpg"></div>
+  <div class="cell"><img src="gallery/7.jpg"></div>
+  <div class="cell"><img src="gallery/8.jpg"></div>
+  <div class="cell"><img src="gallery/9.jpg"></div>
+  <div class="cell"><img src="gallery/10.jpg"></div>
+  <div class="cell"><img src="gallery/11.jpg"></div>
+  <div class="cell"><img src="gallery/12.jpg"></div>
+  <div class="cell"><img src="gallery/13.jpg"></div>
+  <div class="cell"><img src="gallery/14.jpg"></div>
+ 
+</div>
+</div>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+      <div class="contact-left">
+        <h1 class="sub-title"> Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> sravyatogarla09@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Nizamabad,Telangana</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/sravya.togarla.5?mibextid=ZbWKwL"><i class="fab fa-facebook "></i></a>
+          <a href="https://twitter.com/Sravya Togarla09?t=L5V8a4Wa8nK351DGtTq3iw&s=09"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com/sravya_togarla?igshid=MZRLODBINWFLZA="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sravya-togarla"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sravyatogarla"><i class="fab fa-github"></i></a>
+          <a href="https://www.snapchat.com/add/togarla_09?share_id=YwQ7pFonnvM&locale=en-US"><i class="fab fa-snapchat"></i></a>
+        </div>
+        
+        </div>
+       </div>
+
+      <div class="col-md-6">
+      <div class="contact-right">
+        <form>
+          <div class="row"> 
+          <input type="text" name="Name" placeholder="Your Name" required>
+          </div>
+          <div class="row">
+          <input type="text" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="row">
+          <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+        </div>
+          <button type="submit"> Submit</button>
+         </form>
+         </div>
       </div>
-                
-  <div class="col-md-2">
-   <input type="text" placeholder= "enter message" message="">
     </div>
-             
-   </div>
-    
-    <button type="button" class="btn btn-success">Submit </button>
-    
-    </form></div>
+   
+  </div>
+    </div>
+</div>
+<div class="copyright">
+  <p>Copyright&copy; Sravya togarla.</p>
+</div>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript" >
+  $('.main-carousel').flickity({
+// options
+cellAlign: 'left',
+wrapAround:true,
+freeScroll: true
+});
+
+
+</script>
+<script type="text/javascript">
+    // Get the elements
+    var elements = document.querySelectorAll('.content');
+        console.log("elements --- ", elements);
+        // Function to check for fade effect on scroll and resize
+        function checkForFade() {
+        var windowHeight = window.innerHeight;
+        elements.forEach(function (element) {
+            var elementHeight = element.offsetHeight;
+            var elementOffset = element.getBoundingClientRect().top;
+            var space = windowHeight - (elementHeight + elementOffset - window.pageYOffset);
+
+            if (space < 150) {
+            element.classList.add('non-focus');
+            } else {
+            element.classList.remove('non-focus');
+            }
+        });
+        }
+
+        // Add event listeners for scroll and resize and call the checkForFade function
+        window.addEventListener('scroll', checkForFade);
+        window.addEventListener('resize', checkForFade);
+
+        // Trigger the scroll event on initial load
+        window.dispatchEvent(new Event('scroll'));
+</script>
+<script>
+  $(document).ready(function(){
   
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  
+    var typed = new Typed(".typing-2", {
+    strings: [ " Life Science student","Web Developer","Creative Photographer", " Art Enthusiast"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+var typed = new Typed(".typing-3", {
+    strings: [ " Life Science student","Web Developer","Creative Photographer", " Art Enthusiast"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+
+
+ 
+});
+
+
+
+</script>
+<script  src="./script.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
